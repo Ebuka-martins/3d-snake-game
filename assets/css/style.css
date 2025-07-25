@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+#game-container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+  background-color: #000;
+  overflow: hidden;
+}
+
+#score {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #00ff00;
+  font-size: 24px;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+#game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff0000;
+  font-size: 48px;
+  text-shadow: 0 0 10px #ff0000;
+  display: none;
+}
+
+canvas {
+  display: block;
+}
