@@ -33,9 +33,47 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ff0000;
-  font-size: 48px;
+  font-size: 36px;
+  text-align: center;
   text-shadow: 0 0 10px #ff0000;
   display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+#controls button {
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#controls button:hover {
+  background-color: #00cc00;
+  transform: scale(1.05);
+}
+
+#instructions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #00ff00;
+  font-size: 16px;
+  text-shadow: 0 0 5px #00ff00;
 }
 
 canvas {
